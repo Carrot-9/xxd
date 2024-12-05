@@ -12,32 +12,11 @@ int main() {
         if (remainder <= 9) {
             printf("%d%d ", whole, remainder);
         } else {
-            switch(remainder) {
-                case 10: 
-                    printf("%dA ", whole);
-                    break;
-                case 11: 
-                    printf("%dB ", whole);
-                    break;
-                case 12: 
-                    printf("%dC ", whole);
-                    break;
-                case 13:
-                    printf("%dD ", whole);
-                    break;
-                case 14:
-                    printf("%dE ", whole);
-                    break;
-                case 15:
-                    printf("%dF ", whole);
-                    break;
-                default:
-                    printf("Error Occured, Remainder Could Not Be Converted To Hexadecimal.");
-                    return 1;
+           printf("%d%X ", whole, remainder);
             }
-        }
         i++;
     }
     return 0;
 }
+
  
